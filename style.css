@@ -1,0 +1,306 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0; }
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-size: 100%; }
+
+.bg-site {
+  width: 100%;
+  max-width: 1500px;
+  background-image: url(../img/bg-csgo.jpg);
+  background-repeat: no-repeat;
+  height: 2212px;
+  margin: 0 auto; }
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #111;
+  max-width: 1500px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  height: 85px; }
+  .header-logo {
+    padding: 10px;
+    width: 220px; }
+    .header-logo a {
+      display: block;
+      text-align: center;
+      font-size: 17px;
+      line-height: 18px;
+      color: white;
+      text-transform: uppercase;
+      transition: .2s ease; }
+      .header-logo a small {
+        font-size: 12px; }
+      .header-logo a:hover {
+        color: #d13f4a; }
+  .header-menu {
+    display: flex;
+    justify-content: space-between; }
+    .header-menu li {
+      padding: 10px 20px; }
+      .header-menu li a {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 700;
+        transition: .2s ease;
+        color: white; }
+        .header-menu li a:hover {
+          color: #d13f4a; }
+
+.header-title {
+  display: block;
+  padding-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Poppins", sans-serif;
+  text-align: center; }
+  .header-title span {
+    display: block;
+    width: 150px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+    background-color: #d13f4a;
+    padding: 10px 25px;
+    padding-bottom: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin: 0 auto; }
+  .header-title h1 {
+    display: block;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 28px;
+    color: white;
+    background-color: #111;
+    padding: 15px 25px;
+    text-transform: uppercase; }
+  .header-title small {
+    display: block;
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    font-size: 14px;
+    padding: 10px 25px;
+    background-color: #0a0908; }
+
+.content {
+  max-width: 970px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 1740px;
+  margin: 100px auto 0;
+  font-family: "Poppins", sans-serif; }
+  .content-col {
+    max-width: 670px;
+    width: 100%;
+    background-color: white;
+    padding: 10px; }
+    .content-col-news {
+      max-width: 653px;
+      height: 50px;
+      background-color: #f3f3f3;
+      border-right: 6px solid #d13f4a; }
+      .content-col-news span {
+        display: inline-block;
+        padding-top: 15px;
+        padding-left: 25px;
+        padding-bottom: 15px;
+        color: #999;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 700; }
+    .content-col-img {
+      margin-top: 10px; }
+      .content-col-img img {
+        width: 100%; }
+    .content-col .content-flex {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      margin-bottom: 15px; }
+      .content-col .content-flex__links a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80px;
+        height: 20px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 10px;
+        line-height: 22px;
+        margin-bottom: 5px;
+        margin-right: 20px;
+        padding: 5px;
+        font-weight: 600;
+        transition: .2s linear; }
+        .content-col .content-flex__links a:hover {
+          transform: scale(1.05) translateX(3px) translateY(-3px); }
+      .content-col .content-flex__links .data-link {
+        background-color: #d13f4a; }
+      .content-col .content-flex__links .view-link {
+        background-color: #469134; }
+      .content-col .content-flex__links .twit-link {
+        background-color: #24cedd; }
+      .content-col .content-flex__links .fbook-link {
+        background-color: #2f81c0; }
+      .content-col .content-flex__links .read-link {
+        background-color: #d13f4a;
+        justify-content: center;
+        height: 35px;
+        font-size: 11px;
+        font-weight: 600; }
+      .content-col .content-flex__title {
+        max-width: 550px; }
+        .content-col .content-flex__title h2 {
+          color: #484848;
+          font-size: 21px;
+          line-height: 22px;
+          font-weight: 400;
+          letter-spacing: 2.1px;
+          border-left: 5px solid #d13f4a;
+          padding-left: 30px; }
+        .content-col .content-flex__title p {
+          font-style: italic;
+          color: #484848;
+          font-size: 13px;
+          line-height: 22px;
+          letter-spacing: 1.3px;
+          margin-top: 17px;
+          padding-left: 35px; }
+    .content-col-pagination {
+      display: flex;
+      justify-content: center;
+      width: 100px;
+      margin: 0 auto; }
+      .content-col-pagination a {
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin: 3px;
+        border-radius: 4px;
+        background-color: black;
+        opacity: .6; }
+        .content-col-pagination a:first-child {
+          opacity: .3; }
+        .content-col-pagination a:nth-child(2) {
+          opacity: .5; }
+        .content-col-pagination a:hover {
+          background-color: #262626; }
+  .content-sidebar {
+    max-width: 300px;
+    width: 100%;
+    background-color: black;
+    padding: 10px; }
+    .content-sidebar .sidebar-heading {
+      width: 280px;
+      height: 50px;
+      background-color: #181818;
+      border-right: 6px solid #d13f4a; }
+      .content-sidebar .sidebar-heading h3 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 18px;
+        color: #999999;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 25px; }
+    .content-sidebar .sidebar-flex {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5px;
+      margin-bottom: 5px; }
+      .content-sidebar .sidebar-flex a {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        transition: .2s linear; }
+        .content-sidebar .sidebar-flex a:hover {
+          background-color: #1a1a1a; }
+        .content-sidebar .sidebar-flex a img {
+          width: 18px; }
+        .content-sidebar .sidebar-flex a span {
+          color: white;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 18px;
+          text-transform: uppercase; }
+    .content-sidebar__video {
+      margin-top: 5px;
+      margin-bottom: 5px; }
+    .content-sidebar .flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .content-sidebar .flex__item {
+        width: 80px; }
+        .content-sidebar .flex__item img {
+          display: block;
+          width: 37px; }
+        .content-sidebar .flex__item p {
+          color: white; }
+
+/*# sourceMappingURL=style.css.map */
