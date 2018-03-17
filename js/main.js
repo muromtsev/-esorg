@@ -1,10 +1,10 @@
 $(document).ready(function(){
    var btn = $('.hb-btn');
-    var sidebar = $('.content-sidebar');
+    var menu = $('.header-menu');
     
     btn.click(function(){
        btn.toggleClass('hb-btn_active');
-        sidebar.toggleClass('content-sidebar_active');
+        menu.toggleClass('header-menu_active');
     });
     
     
