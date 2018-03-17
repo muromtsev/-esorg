@@ -73,46 +73,50 @@ body {
     height: 2212px;
     margin: 0 auto;
 }
+//hamburger-btn
 .hb-btn {
-        display: none;
-        width: 40px;
-        height: 40px;
-        background-color: #fff;    
-        position: fixed;
-        z-index: 9999;  
-    }
-    .hb-btn .hb, .hb:before, .hb:after {
-        display: block;
-        height: 2px;
-        width: 18px;
-        position: absolute;
-        left: 50%;
-        margin-left: -9px;
-        margin-top: -1px;
-        top: 50%;
-        background-color: #333;    
-    }
-    .hb:before {
-        content: '';
-        margin-top: -6px;
-        transition: all 0.2s;
-    }
-    .hb:after {
-        content: '';
-        margin-top: 4px;
-        transition: all 0.2s;
-    }
-    .hb-btn_active .hb{
-        background-color: transparent;
-    }
-    .hb-btn_active .hb:before {
-        transform: rotate(135deg);
-        margin-top: 0;
-    }
-    .hb-btn_active .hb:after {
-        transform: rotate(-135deg);
-        margin-top: 0;
-    }
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: $red;    
+    position: fixed;
+    z-index: 9999;  
+    cursor: pointer;
+    border-radius: 50%;
+}
+.hb-btn .hb, .hb:before, .hb:after {
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: absolute;
+    left: 50%;
+    margin-left: -9px;
+    margin-top: -1px;
+    top: 50%;
+    background-color: $white;    
+}
+.hb:before {
+    content: '';
+    margin-top: -6px;
+    transition: all 0.2s;
+}
+.hb:after {
+    content: '';
+    margin-top: 4px;
+    transition: all 0.2s;
+}
+.hb-btn_active .hb{
+    background-color: transparent;
+}
+.hb-btn_active .hb:before {
+    transform: rotate(135deg);
+    margin-top: 0;
+}
+.hb-btn_active .hb:after {
+    transform: rotate(-135deg);
+    margin-top: 0;
+}//hamburger-btn
+//header
 .header {
     position: fixed;
     display: flex;
@@ -160,8 +164,7 @@ body {
                 text-transform: uppercase;
                 font-weight: 700;
                 transition: .2s ease;
-                color: $white;
-                transition: .3s linear;                
+                color: $white;                
                 &:hover {
                     color: $red;
                     background-color: $sidebar-heading;

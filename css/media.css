@@ -52,13 +52,14 @@
     
     .header-menu {
         display: none;
-        flex-wrap: wrap;       
+        flex-wrap: wrap;
     }
     .header-menu li a {
         text-align: center;
     }
     .header-menu_active {
         display: flex;
+        opacity: 1;
     }
     
     .header-title {
